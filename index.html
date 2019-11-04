@@ -12,6 +12,33 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>Uploader Client</h1>
+
+      <!-- Sign Up -->
+      <form id="sign-up" class="border">
+        <fieldset>
+          <legend>Sign up!</legend>
+          <input type="text" name="credentials[email]" placeholder="Email">
+          <input type="password" name="credentials[password]" placeholder="Password">
+          <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+          <input type="submit" value="Sign up!">
+        </fieldset>
+      </form>
+
+      <!-- Sign In -->
+      <form id="sign-in" class="border">
+        <fieldset>
+          <legend>Sign in!</legend>
+          <input type="text" name="credentials[email]" placeholder="Email">
+          <input type="password" name="credentials[password]" placeholder="Password">
+          <input type="submit" value="Sign in!">
+        </fieldset>
+      </form>
+
+      <!-- File Upload Form -->
+      <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Submit">
+      </form>
     </body>
 </html>
